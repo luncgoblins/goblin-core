@@ -1,0 +1,24 @@
+[package]
+name = "goblin-staking-contract"
+version = "0.0.1"
+authors = ["LuncGoblins"]
+edition = "2021"
+description = "Implementation of the LuncGoblins Staking Contract"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+backtraces = ["cosmwasm-std/backtraces"]
+# use library feature to disable all init/handle/query exports
+library = []
+
+[dependencies]
+cw2 = "0.15"
+cw-storage-plus = "0.16"
+cosmwasm-std = "1.1"
+schemars = "0.8.1"
+goblin-staking = { path = "../../packages/goblin-staking" }
+serde = { version = "1.0.103", default-features = false, features = ["derive"] }
+snafu = "0.6"

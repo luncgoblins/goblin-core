@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Text file backups
+**/*.rs.bk
+
+# Build results
+target/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Auto-gen
+.cargo-ok
+/artifacts/*.wasm
+/artifacts/checksums_intermediate.txt
+/artifacts/checksums.txt
+/artifacts/localterra.json
+/artifacts/localterra_data.json
+/artifacts/old
