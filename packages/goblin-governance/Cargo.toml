@@ -1,9 +1,9 @@
 [package]
-name = "goblin-staking"
+name = "goblin-governance"
 version = "0.0.1"
 authors = ["LuncGoblins"]
 edition = "2021"
-description = "Common goblin staking types"
+description = "Common goblin governance types"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
@@ -15,3 +15,4 @@ serde = { version = "1.0.103", default-features = false, features = ["derive"] }
 uint = "0.9"
 cw-storage-plus = "0.16"
 thiserror = "1"
+cosmwasm-schema = "1.1"

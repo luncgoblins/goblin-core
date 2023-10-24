@@ -18,6 +18,11 @@ pub struct QueryStakersResp {
 }
 
 #[derive(Serialize, Deserialize)]
+pub struct QueryStakedResp {
+    pub staked: Uint128
+}
+
+#[derive(Serialize, Deserialize)]
 pub struct QueryClaimsResp {
     pub released:           Claims,
     pub total_released:     Uint128,

@@ -356,11 +356,38 @@ dependencies = [
 ]
 
 [[package]]
+name = "goblin-governance"
+version = "0.0.1"
+dependencies = [
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cw-storage-plus 0.16.0",
+ "schemars",
+ "serde",
+ "thiserror",
+ "uint",
+]
+
+[[package]]
+name = "goblin-governance-contract"
+version = "0.0.1"
+dependencies = [
+ "cosmwasm-std",
+ "cw-storage-plus 0.16.0",
+ "cw2",
+ "goblin-governance",
+ "goblin-staking",
+ "schemars",
+ "serde",
+ "snafu",
+]
+
+[[package]]
 name = "goblin-staking"
 version = "0.0.1"
 dependencies = [
  "cosmwasm-std",
- "cw-storage-plus 0.15.1",
+ "cw-storage-plus 0.16.0",
  "schemars",
  "serde",
  "thiserror",

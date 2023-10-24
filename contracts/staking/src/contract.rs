@@ -123,7 +123,7 @@ pub fn query(
 
 pub fn query_all_stakers(
     deps: Deps,
-    env: Env,
+    _env: Env,
 ) -> StdResult<QueryResponse> {
 
     let stakers = STAKES.keys(
@@ -159,7 +159,7 @@ pub fn query_staked_per_address(
 
 pub fn query_staked_at_per_address(
     deps: Deps,
-    env: Env,
+    _env: Env,
     address: Addr,
     height: u64,
 ) -> StdResult<QueryResponse> {
@@ -181,7 +181,7 @@ pub fn query_total_staked(
 
 pub fn query_total_staked_at(
     deps: Deps,
-    env: Env,
+    _env: Env,
     height: u64,
 ) -> StdResult<QueryResponse> {
 
